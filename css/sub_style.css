@@ -1,0 +1,189 @@
+@charset "utf-8";
+@font-face {
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'MaruBuri-Regular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+/* font-family: 'GmarketSansMedium','MaruBuri-Regular'*/
+
+/* 색코드
+#FF740F 주황
+#1B3870 파랑
+#343434 풋터회색*/
+
+*{margin: 0; padding: 0;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; display: block;}
+body, section, header, footer, div, aside, nav, ul, li, ol,h1,h4,h5,h6, a, tr,td,th,article,button{font-family: 'GmarketSansMedium', sans-serif; font-size:16px; color: #000;}
+
+/*--------------------------common start----------------------------------*/
+.text_bg{background-color: #FF740F; display:inline-block; padding:0 5px; line-height:normal; color:#FFF;}
+.btn{position: relative;background-color: rgba(0,0,0,0); border:1px solid #FF740F; color:#FF740F; width: 200px; height: 50px; background-color: none; cursor: pointer; display: block; line-height: 50px;transition-duration: 0.6s;}
+.btn:hover{background-color: #000; color: #fff ;border:1px solid #000;display:block;}
+.btn a{display:block;}
+
+h2{position: relative; font-size:2.5em; line-height:2em; font-family:'MaruBuri-Regular'; text-align: center; font-weight: bold;}
+h3{font-weight: normal;}
+p{font-weight: normal;}
+h2::before{position: absolute;content:"";bottom:0; left:50%; transform: translateX(-50%); background-color:#ff740f; border: 1px solid #ff740f; border-radius: 1px; width:5em; display:block;}
+/*---------------------------common end------------------------------------*/
+/*--------------------------header start-----------------------------------*/
+#header{position: fixed; width: 100%; height: 100px; left: 0; top: 0; background-color: #FFF; z-index: 9999;}
+#header .top_logo{position: absolute; left: 5%; top: 20px;}
+#header .gnb_list{position: absolute; height: 100%; top: 0; left: 50%; transform: translateX(-50%); width: 650px;}
+#header .gnb_list ul{display: flex; justify-content: space-between;}
+#header .gnb_list a{display: block; line-height: 100px; text-align: center; font-weight: bold; color:#ff740f;}
+#header .gnb_list li:nth-child(1) a,#header .gnb_list li:nth-child(4) a{color:#000;}
+#header .gnb_btn{position: absolute; right:5%; top:30.5px; border:none; background-color: rgba(0,0,0,0); cursor: pointer;}
+/*--------------------------header end-----------------------------------*/
+/*-----------------------------esg start----------------------------------*/
+/*---------esgToobanner-------------*/
+#esgTopbanner{position: relative; margin-top:100px; overflow: hidden;}
+#esgTopbanner .esg_top_banner_banner_img{position:relative;width:100%; height:600px;}
+#esgTopbanner .esg_top_banner_banner_img img{width:100%;}
+#esgTopbanner .esg_top_banner_text{position:absolute; top:50%;left:50%;transform: translate(-50%,-50%); display:flex; flex-direction: column; align-items: center; text-align: center; width:100%;}
+#esgTopbanner .esg_top_banner_text h2{font-family: "GmarketSansMedium";font-size:3.0em;font-weight: normal; line-height: 1em;color: #FFF;}
+#esgTopbanner .esg_top_banner_text p{color: #FFF;}
+#esgTopbanner .esg_top_banner_text h2::before{display: none;height: 100%;}
+/*-----------esgAboutbanner----------*/
+#esgAboutbanner{position: relative;}
+#esgAboutbanner h2{margin-bottom: 50px;}
+#esgAboutbanner .esg_about_banner_top{display:flex; justify-content: space-evenly;background-color: #eee;position: relative;padding: 100px 0; margin:0 auto;}
+#esgAboutbanner .esg_about_banner_top_text h2{text-align: start;}
+#esgAboutbanner .esg_about_banner_top_text h2::before{position: absolute;bottom:0; left:10%; transform: translateX(-50%);width:80px}
+#esgAboutbanner .esg_about_banner_bottom{display:flex;justify-content: space-evenly;position: relative; margin: 100px auto;}
+#esgAboutbanner .esg_about_banner_bottom_text h2{text-align: start;}
+#esgAboutbanner .esg_about_banner_bottom_text h2::before{position: absolute;bottom:0; left:10%; transform: translateX(-50%);width:80px}
+/*-----------esgMainbanner----------*/
+#esgMainbanner{position: relative;width:1200px; margin:100px auto;}
+#esgMainbanner p{margin-bottom: 50px; text-align: center;}
+#esgMainbanner img{margin:0 auto;}
+/*-----------esgBottombanner--------*/
+#esgBottombanner{position: relative; padding:100px 0; margin:0 auto;background-color: #eee;}
+#esgBottombanner .esg_bottom_banner_inner{display:flex; justify-content: space-between;width:1200px; margin:0 auto;}
+#esgBottombanner .esg_bottom_banner_inner .esg_bottom_banner_left p{margin-bottom: 50px;}
+#esgBottombanner .esg_bottom_banner_inner .esg_bottom_banner_left table{border: 1px solid #333; line-height: 2em; padding:20px; background-color: #eee; border-spacing: 0;}
+table tr th{border-bottom: 1px solid #333; padding: 0 20px;}
+table tr td{text-align: center;}
+
+
+
+/*----------------------------esg end------------------------------------*/
+/*-----------------------------product start-------------------------------*/
+/*-----------productTopbanner-----------*/
+#productTopbanner{position: relative; margin-top:100px; height:100%;overflow: hidden;}
+#productTopbanner .product_topbanner_banner_img{position:relative; height:600px;}
+#productTopbanner .product_topbanner_banner_img img{width:100%;}
+#productTopbanner .product_top_banner_text{position:absolute; top:50%;left:50%;transform: translate(-50%,-50%); display:flex; flex-direction: column; align-items: center; text-align: center; color:#fff;}
+#productTopbanner .product_top_banner_text h2{font-family: "GmarketSansMedium";font-size:3.0em;font-weight: normal; line-height: 1em; color:#EEE;}
+#productTopbanner .product_top_banner_text p{color:#FFF}
+#productTopbanner .product_top_banner_text h2::before{display: none;height: 100%;}
+/*----------productMainbanner----------*/
+#productMainbanner{position: relative;width:1200px; margin:100px auto;}
+#productMainbanner .product_mainbanner_inner{display:flex}
+#productMainbanner .product_mainbanner_inner_left{width:50%; position: relative;}
+#productMainbanner .product_mainbanner_inner_left_img img:last-child{position: absolute;top:0;left:0;margin-top:30px; margin-left:30px; z-index: 1;}
+#productMainbanner .product_mainbanner_inner_right{width:50%; position: relative;}
+#productMainbanner .product_mainbanner_inner_right_img img:first-child{position: relative;}
+#productMainbanner .product_mainbanner_inner_right_img img:last-child{position: absolute;bottom:-5%;left:40%; z-index: 1;}
+#productMainbanner .product_mainbanner_inner_right_text{position: relative; display: flex; flex-direction: column; justify-content: center; }
+#productMainbanner .product_mainbanner_inner_right_text h3{font-size: 2em; font-weight: normal; font-family: "MaruBuri-Regular";}
+#productMainbanner .product_mainbanner_inner_right_text .btn{position: relative; margin: 50px 0; left:30%;}
+/*---------productList---------*/
+#productList{position: relative;width:1200px;margin:0 auto;}
+#productList .product_list_text{margin-bottom:100px;}
+#productList .product_list_text h3{text-align: center; margin-top:50px;}
+#productList .product_list_inner .product_list_inner_list{display:flex; flex-wrap: wrap; justify-content: space-between;}
+#productList .product_list_inner .product_list_inner_list li{width: 32%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; }
+#productList .product_list_inner .product_list_inner_list li img{width:100%}
+#productList .product_list_inner .product_list_inner_list h3{margin:20px 0;}
+#productList .product_list_inner .product_list_inner_list h4{font-size: 1.0em; font-weight: 200; margin:20px 0;}
+#productList .product_list_inner .product_list_inner_list p{margin-bottom: 20px;}
+#productList .product_list_inner .product_list_inner_list a{color:#000;}
+#productList .product_page_numder {display:flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom:100px;}
+#productList .product_page_numder ul{display:flex;}
+#productList .product_page_numder ul li{margin-left:10px;}
+#productList .product_page_numder a{color:#000;}
+/*------------product end-------------*/
+#productBottombanner{overflow: hidden;}
+/*-------------------------ad start----------------------------------------*/
+/*---------adTopbanner---------*/
+#adTopbanner{position: relative; margin-top:100px; width:100%; height:100%;overflow: hidden;}
+#adTopbanner .ad_topbanner_banner_img{position:relative; height:600px;}
+#adTopbanner .ad_topbanner_banner_img img{width:100%;}
+#adTopbanner .ad_top_banner_text{position:absolute; top:50%;left:50%;transform: translate(-50%,-50%); display:flex; flex-direction: column; align-items: center; text-align: center;}
+#adTopbanner .ad_top_banner_text h2{font-family: "GmarketSansMedium";font-size:3.0em;font-weight: normal; line-height: 1em;color:#EEE;}
+#adTopbanner .ad_top_banner_text p{color:#EEE;}
+#adTopbanner .ad_top_banner_text h2::before{display: none;height: 100%;}
+/*-----------adList------------*/
+#adList{position: relative;width: 1200px; margin: 0 auto;}
+#adList .ad_list_text{margin:50px 0;}
+#adList .ad_list_inner{display:flex;position: relative; margin-bottom: 100px;justify-content:space-between; align-items: center;}
+#adList .ad_list_inner .btn{position: absolute; bottom:10%;left:50%;transform: translateX(-50%);}
+#adList .ad_list_inner_left{position: relative; width:48%;}
+#adList .ad_list_inner_left img{width:100%;}
+#adList .ad_list_inner_right{position: relative; width:48%;}
+#adList .ad_list_inner_right .ad_list_inner_list{display: flex; flex-wrap: wrap; justify-content:space-between;}
+#adList .ad_list_inner_right .ad_list_inner_list li{width:48%; margin:50px 0;}
+#adList .ad_list_inner_right .ad_list_inner_list li img{width:100%;}
+#adList .ad_list_inner_right .ad_list_inner_list li img a{width:100%;}
+#adList .ad_page_numder {display:flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom:100px;}
+#adList .ad_page_numder ul{display:flex;}
+#adList .ad_page_numder ul li{margin-left:10px;}
+#adList .ad_page_numder a{color:#000;}
+/*-----------------------------ad end---------------------------------------*/
+/*---------------------------customer start---------------------------------*/
+/*-------customerTopbanner---------*/
+#customerTopbanner{position: relative; margin-top:100px; width:100%; height:100%;overflow: hidden;}
+#customerTopbanner .ad_topbanner_banner_img{position:relative; height:600px;}
+#customerTopbanner .customer_topbanner_banner_img img{width:100%;}
+#customerTopbanner .customer_top_banner_text{position:absolute; top:50%;left:50%;transform: translate(-50%,-50%); display:flex; flex-direction: column; align-items: center; text-align: center; }
+#customerTopbanner .customer_top_banner_text h2{font-family: "GmarketSansMedium";font-size:3.0em;font-weight: normal; line-height: 1em;color:#EEE;}
+#customerTopbanner .customer_top_banner_text p{color:#EEE;}
+#customerTopbanner .customer_top_banner_text h2::before{display: none;height: 100%;}
+/*-------customerMainbanner-----*/
+#customerMainbanner{position: relative; background-color: #eee;}
+#customerMainbanner .customer_main_banner_inner{display:flex; justify-content: space-between; width:1200px; padding:100px 0; margin:0 auto;}
+#customerMainbanner .customer_main_banner_text h2{text-align: start; margin-bottom:50px;}
+#customerMainbanner .customer_main_banner_text h2::before{position: absolute;bottom:0; left:0%; transform: translateY(-50%);width:170px}
+#customerMainbanner .customer_main_banner_text p{margin-bottom: 50px;}
+#customerMainbanner .customer_Mainbanner_banner_img{position: relative;display: flex; flex-direction: column; justify-content: center;}
+#customerMainbanner .customer_Mainbanner_banner_img img{z-index: 1;}
+/*--------customerList---------*/
+#customerList{width:1200px; margin:100px auto;}
+#customerList h2{margin-bottom: 100px;}
+#customerList h2::before{width:380px;}
+#customerList .customer_list_inner_list{display:flex; flex-wrap: wrap; justify-content: space-between;}
+#customerList .customer_list_inner_list li{width:23.5%;}
+#customerList .customer_list_inner_list p{margin:20px 0;}
+/*-------customerBottombanner---*/
+#customerBottombanner{position: relative;}
+#customerBottombanner .customer_bottom_banner_text{position: absolute; left:50%; top:0%; transform: translateX(-50%);}
+#customerBottombanner{position: relative;}
+#customerBottombanner .customer_bottom_banner_text h2{margin:50px 0;}
+#customerBottombanner .customer_bottom_banner_text p{text-align: center;}
+#customerBottombanner .btn{margin:50px auto;}
+#customerBottombanner{overflow:hidden}
+
+/*------------------------customer end-------------------------------------*/
+/*----------------------------footer start----------------------------------*/
+#footer{position: relative;background-color: #343434; color:#fff; padding: 0 100px;}
+#footer .fnb{border-bottom: 1px solid #fff; padding:50px 0;}
+#footer .fnb ul{display:flex;}
+#footer .fnb ul li a{color:#fff; margin-left:10px;}
+#footer .footer_mid{display: flex; justify-content: space-between; margin-top: 50px; text-align: center;}
+#footer .footer_mid address{font-style: normal; font-size: 0.8em; color:#fff;}
+#footer .footer_mid>img{height: 50px;}
+#footer .footer_mid .footer_sns{width:150px;}
+#footer .footer_mid .sns{display: flex; justify-content: space-evenly;}
+#footer .footer_mid .sns li{width: 32%;}
+#footer .copyright{font-size:0.8em; padding-bottom:50px; color:#fff;}
+/*-----------------------------footer end----------------------------------*/

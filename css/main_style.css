@@ -1,0 +1,146 @@
+@charset "utf-8";
+@font-face {
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'MaruBuri-Regular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+/* font-family: 'GmarketSansMedium','MaruBuri-Regular'*/
+
+/* 색코드
+#FF740F 주황
+#1B3870 파랑
+#343434 풋터회색*/
+
+*{margin: 0; padding: 0;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; display: block;}
+body, section, header, footer, div, aside, nav, ul, li, ol,h1,h2,h3,h4,h5,h6,p, a, tr,td,th,article,button{font-family: 'GmarketSansMedium', sans-serif; font-size:16px; color: #000;}
+
+/*--------------------------common start----------------------------------*/
+.text_bg{background-color: #FF740F; display:inline-block; padding:0 5px; line-height:normal; color:#FFF;}
+.btn{position: relative;background-color: rgba(0,0,0,0); border:1px solid #FF740F; color:#FF740F; width: 200px; height: 50px; background-color: none; cursor: pointer; display: block; line-height: 50px;transition-duration: 0.6s;}
+.btn:hover{background-color: #000; color: #fff ;border:1px solid #000;display:block;}
+.btn a{display:block;}
+
+h2{position: relative; font-size:3em; line-height:2em; font-family:'MaruBuri-Regular'; text-align: center; font-weight: bold;}
+h3{font-size:1.2em; font-weight: normal;}
+p{font-weight: normal;}
+h2::before{position: absolute;content:"";bottom:0; left:50%; transform: translateX(-50%); background-color:#ff740f; border: 1px solid #ff740f; border-radius: 1px; width:5em; display:block;}
+/*---------------------------common end------------------------------------*/
+/*--------------------------header start-----------------------------------*/
+#header{position: fixed; width: 100%; height: 100px; left: 0; top: 0; background-color: #FFF; z-index: 9999;}
+#header .top_logo{position: absolute; left: 5%; top: 20px;}
+#header .gnb_list{position: absolute; height: 100%; top: 0; left: 50%; transform: translateX(-50%); width: 650px;}
+#header .gnb_list ul{display: flex; justify-content: space-between;}
+#header .gnb_list a{display: block; line-height: 100px; text-align: center; font-weight: bold; color:#ff740f;}
+#header .gnb_list li:nth-child(1) a,#header .gnb_list li:nth-child(4) a{color:#000;}
+#header .gnb_btn{position: absolute; right:5%; top:30.5px; border:none; background-color: rgba(0,0,0,0); cursor: pointer;}
+/*--------------------------header end-----------------------------------*/
+/*-------------topBanner-------------*/
+#topBanner{position: relative; height:100% ; margin-top: 100px; overflow: hidden;}
+#topBanner .top_banner_img{position: relative;}
+#topBanner .btn{position:absolute; left: 50%; bottom:10%; color:#FFF; border:1px solid #FFF; transform: translateX(-50%);}
+#topBanner .btn:hover{background-color: #000; color: #fff ;border:1px solid #000;display:block;}
+#topBanner .main_arrow{position:absolute; top:50%; display:block; background-color: rgba(0,0,0,0); border:none;}
+#topBanner .main_arrow_l{left:20%;;cursor: pointer}
+#topBanner .main_arrow_r{right:20%;}
+#topBanner .top_banner_text{position: absolute; left: 25%; top: 30%; transform: translateY(-50%); text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)}
+#topBanner .top_banner_text p{color:#FFF}
+#topBanner .top_banner_text h2{line-height: normal; text-align: start; color:#FFF;font-weight: 500; font-size:3.5em;}
+#topBanner .top_banner_text h2>span{color:#FFF}
+#topBanner .top_banner_text h2::before{display:none;}
+#topBanner .top_banner_text h3{position: relative; top:0.4em; left:0;color:#FFF}
+/*----------popularBanner-----------*/
+#popularBanner{position: relative; margin-top: 100px;}
+#popularBanner .popular_banner_img{width: 778px; height: 680px; background-image: url(../img/popular_bg.png); background-position: center; background-size: cover; background-repeat: no-repeat; position: absolute;}
+#popularBanner .popular_wrap{position: relative; width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-end;justify-content: space-around;z-index: 1;}
+#popularBanner .popular_wrap .popular_text{margin-top: 40px; margin-right:100px;}
+#popularBanner .popular_wrap .popular_text h2::before{width:300px;}
+#popularBanner .popular_wrap .popular_text h3{margin:0 auto; text-align: center;}
+#popularBanner .popular_list{display:flex; align-items: center;}
+#popularBanner .popular_list li{margin-left: 50px}
+#popularBanner .popular_wrap .btn{margin-right:200px;}
+/*-----------okittchen------------*/
+#okitchen{position: relative; margin-top:100px; height:700px;}
+#okitchen .okitchen_bg{position:absolute; width: 100%; height:700px; background-image: url(../img/okitchen_right_bg.png);background-position: center; background-size: cover; background-repeat: no-repeat; left:0; top: 0;}
+#okitchen .okitchen_wrap{position:relative; display:flex; justify-content: space-between; width: 1200px; margin: 0 auto; padding: 150px 0;}
+#okitchen .okitchen_left_wrap{background-color: #FFF; border: 10px solid #fff; border-radius: 50px; padding: 20px 0; display: flex; align-items: center; padding-right: 30px; margin-left: 100px;}
+#okitchen .okitchen_left_wrap .okitchen_left_wrap_img{margin-left: -100px; margin-right: 30px;}
+#okitchen .okitchen_wrap .okitchen_right{position: relative; text-align: center; margin-top:-50px;}
+#okitchen .okitchen_wrap .okitchen_right ul{display: flex;}
+#okitchen .okitchen_left_wrap h3{font-size:2em;color:#ff740f; font-weight: 900;}
+#okitchen .okitchen_left_wrap p{font-size:0.8em; margin-bottom: 20px;}
+#okitchen .okitchen_left_wrap .hashtag{color:#444; font-style: italic; font-weight: 600;}
+#okitchen .okitchen_right h2{color:#FFF}
+#okitchen .okitchen_right h2::before{display:none;}
+#okitchen .okitchen_right h3{position:relative; margin-bottom: 100px;color: #FFF;}
+#okitchen .okitchen_right h3::before{position: absolute;content:""; bottom:-50%; left:50%; transform: translateX(-50%); background-color:#ff740f; border: 1px solid #ff740f; border-radius: 1px; width:200px; display:block;}
+#okitchen .okitchen_right li a img{margin-left:50px;}
+/*----------newBanner-----------*/
+#newBanner{width:1200px; position: relative; margin: 100px auto;}
+#newBanner h2::before{width: 450px}
+#newBanner h2{margin-bottom: 80px;}
+#newBanner h2::before{width:350px;}
+#newBanner .new_banner_list{display:flex; justify-content: space-between; flex-wrap: wrap;}
+#newBanner .new_banner_list li{width: 32%; position: relative; margin-bottom:2%;}
+#newBanner .new_banner_list li .over_box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition-duration: 0.6s; }
+#newBanner .new_banner_list li .over_box .btn{color:#FFF; border: 1px solid #fff;}
+#newBanner .new_banner_list li .over_box h3{font-size:1.5em; color:#FFF; text-align: center; position: relative; top:-30px ;transition-duration: 0.6s;}
+#newBanner .new_banner_list li .over_box a{position: absolute; left: 50%; bottom: 20%; transform: translateX(-50%);}
+#newBanner .new_banner_list li .over_box:hover{opacity: 1;}
+#newBanner .new_banner_list li .over_box:hover h3{top:80px;opacity: 1;}
+#newBanner .new_banner_list li img{width: 100%;}
+#newBanner .new_banner_list li .over_box .btn:hover{background-color: #000; color: #fff ;border:1px solid #000;}
+
+/*-------videoBanner----------*/
+#videoBanner{position: relative;width:1200px; display:flex; margin:0 auto; flex-direction: column; justify-content: center; align-items: center;}
+#videoBanner .video_bg{background-image: url(../img/videoBanner_video_dark.png); position: absolute; width:100%; height:100%; background-position: center; background-size: cover; background-repeat: no-repeat; }
+#videoBanner video{width:800px; height: 600px ;position: relative; margin: 150px 0; display:block;}
+#videoBanner .btn{position: absolute; bottom:0%; left:50%; transform: translate(-50%); margin-bottom:50px;}
+/*---------snsBanner----------*/
+#snsBanner{position: relative; width:100%; margin: 100px 0; overflow: hidden; background: rgb(27,56,112);
+   background: linear-gradient(180deg, rgba(27,56,112,1) 0%, rgba(12,33,74,1) 50%, rgba(10,26,57,1) 100%);}
+#snsBanner .sns_banner_text{position: relative; padding: 0 80px;  margin: 100px auto;}
+#snsBanner .sns_banner_text h2{color:#FFF}
+#snsBanner .sns_banner_list{margin-bottom:200px; width:1800px;}
+#snsBanner .sns_banner_list ul{position: relative;display:flex; align-items:center; justify-content: space-between;}
+#snsBanner .sns_banner_list li{width:15%; margin-right: 30px;flex-shrink:0; }
+#snsBanner .sns_banner_list li:nth-child(4){width:15%;}
+#snsBanner .sns_banner_list li img{width:100%; transition-duration: 0.6s;}
+#snsBanner .sns_banner_list li img:hover{transform: scale(1.1);}
+#snsBanner .btn{position: absolute; bottom:10%; left: 50%; transform: translateX(-50%);}
+#snsBanner .controls li{width: 14px; height: 14px; border-radius: 7px; background-color: #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); cursor: pointer; margin: 0 5px;}
+#snsBanner .controls li.top_select{width:26px; background-color: #b21848;}
+
+/*------adBanner---------*/
+#adBanner{position: relative; padding-top: 100px; overflow: hidden;}
+#adBanner .adBanner_inner{position: relative; margin:0 auto;}
+#adBanner .adbanner_text{position: relative;  width: 500px; height: 300px;box-sizing:border-box; top:-120px;}
+#adBanner .adbanner_text p{text-align: center; margin-top:30px;}
+#adBanner .adbanner_list{position: absolute;left: 500px; top:0; width: 1200px;}
+#adBanner .adbanner_list ul{display:flex;width:200%;}
+#adBanner .adbanner_list ul li{width: 49%; margin-left: 1%;}
+#adBanner .adbanner_list ul li img{width:100%;}
+#adBanner h2::before{width:100px;}
+#adBanner .btn{left:30%;top:10%}
+/*----------------------------footer start----------------------------------*/
+#footer{position: relative;background-color: #343434; color:#fff; padding: 0 100px;}
+#footer .fnb{border-bottom: 1px solid #fff; padding:50px 0;}
+#footer .fnb ul{display:flex;}
+#footer .fnb ul li a{color:#fff; margin-left:10px;}
+#footer .footer_mid{display: flex; justify-content: space-between; margin-top: 50px; text-align: center;}
+#footer .footer_mid address{font-style: normal; font-size: 0.8em; color:#fff;}
+#footer .footer_mid>img{height: 50px;}
+#footer .footer_mid .footer_sns{width:150px;}
+#footer .footer_mid .sns{display: flex; justify-content: space-evenly;}
+#footer .footer_mid .sns li{width: 32%;}
+#footer .copyright{font-size:0.8em; padding-bottom:50px; color:#fff;}
+/*-----------------------------footer end----------------------------------*/
